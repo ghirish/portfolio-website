@@ -1,0 +1,111 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(102, 126, 234, 0.2);
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  padding: 0.8rem 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #e2e8f0;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-weight: 500;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+.nav button::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.3s ease;
+}
+
+.nav button:hover {
+  color: #667eea;
+  transform: translateY(-2px);
+}
+
+.nav button:hover::after {
+  width: 100%;
+}
+
+/* Add top margin to body to account for fixed header */
+body {
+  margin-top: 90px;
+}
+
+/* Initial animation states */
+.fade-in-left {
+  animation-delay: 0.2s;
+}
+
+.fade-in-right {
+  animation-delay: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav ul {
+    gap: 2rem;
+  }
+  
+  .nav button {
+    font-size: 0.9rem;
+  }
+  
+  .logo h2 {
+    font-size: 1.5rem;
+  }
+  
+  body {
+    margin-top: 140px;
+  }
+} 

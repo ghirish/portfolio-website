@@ -1,0 +1,169 @@
+.experience {
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-intro {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.experience-tabs {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.tab-navigation {
+  display: flex;
+  gap: 0;
+  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 0.5rem;
+  overflow-x: auto;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-family: inherit;
+  flex: 1;
+  min-width: fit-content;
+}
+
+.tab-button:hover {
+  color: #667eea;
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.tab-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.experience-card {
+  padding: 2.5rem;
+  position: relative;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.5), transparent);
+}
+
+.experience-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.experience-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.period {
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  color: #cbd5e1;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.responsibilities {
+  margin-top: 1.5rem;
+  list-style: none;
+}
+
+.responsibilities li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.responsibilities li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Animation delays for staggered effect */
+.experience-intro.fade-in-up {
+  transition-delay: 0.1s;
+}
+
+.experience-tabs.fade-in-left {
+  transition-delay: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .experience-intro {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .tab-navigation {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .tab-button {
+    text-align: center;
+    padding: 0.8rem 1rem;
+    flex: none;
+  }
+  
+  .experience-card {
+    padding: 2rem;
+  }
+  
+  .experience-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .experience-card h4 {
+    font-size: 1.1rem;
+  }
+} 
