@@ -27,16 +27,12 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-gradient-to-br from-purple-400/10 to-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Content */}
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            {/* Status Badge */}
+            {/* Location Badge */}
             <div className="flex items-center space-x-2">
-              <Badge variant="secondary" className="bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400 border-green-200 dark:border-green-800">
-                <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-                Available for opportunities
-              </Badge>
               <Badge variant="outline" className="flex items-center space-x-1">
                 <MapPin className="w-3 h-3" />
                 <span>Providence, RI</span>
@@ -45,7 +41,7 @@ const Hero = () => {
 
             {/* Main Heading */}
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-bold leading-tight max-w-2xl">
                 <span className="block text-slate-900 dark:text-white">Hi, I'm</span>
                 <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x">
                   Ghirish Thaenraj
@@ -111,7 +107,7 @@ const Hero = () => {
             {/* Quick Links */}
             <div className="flex items-center space-x-6 pt-4">
               <a 
-                href="https://github.com/ghirish-pranav" 
+                href="https://github.com/ghirish" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
@@ -120,7 +116,7 @@ const Hero = () => {
                 <ExternalLink className="inline-block ml-1 w-3 h-3" />
               </a>
               <a 
-                href="https://linkedin.com/in/ghirish-pranav" 
+                href="https://www.linkedin.com/in/ghirish-thaenraj-769b35236/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"

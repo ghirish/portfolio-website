@@ -97,15 +97,15 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      username: '@ghirish-pranav',
-      href: 'https://github.com/ghirish-pranav',
+      username: '@ghirish-thaenraj',
+      href: 'https://github.com/ghirish',
       color: 'text-slate-700 dark:text-slate-300'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      username: '/in/ghirish-pranav',
-      href: 'https://linkedin.com/in/ghirish-pranav',
+      username: '/in/ghirish-thaenraj',
+      href: 'https://www.linkedin.com/in/ghirish-thaenraj-769b35236/',
       color: 'text-blue-600 dark:text-blue-400'
     },
     {

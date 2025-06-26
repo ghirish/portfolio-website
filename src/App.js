@@ -21,7 +21,7 @@ function App() {
         <Separator className="mx-auto w-24 bg-gradient-to-r from-blue-500 to-purple-500 h-1" />
 
         {/* About Section */}
-        <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+        <section id="about" className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <About />
           </div>
@@ -30,7 +30,7 @@ function App() {
         <Separator className="mx-auto w-24 bg-gradient-to-r from-purple-500 to-pink-500 h-1" />
 
         {/* Experience Section */}
-        <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50/50 dark:bg-slate-900/50">
+        <section id="experience" className="py-12 px-4 sm:px-6 lg:px-8 bg-slate-50/50 dark:bg-slate-900/50">
           <div className="max-w-7xl mx-auto">
             <Experience />
           </div>
@@ -39,7 +39,7 @@ function App() {
         <Separator className="mx-auto w-24 bg-gradient-to-r from-pink-500 to-orange-500 h-1" />
 
         {/* Projects Section */}
-        <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
+        <section id="projects" className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <Projects />
           </div>
@@ -48,7 +48,7 @@ function App() {
         <Separator className="mx-auto w-24 bg-gradient-to-r from-orange-500 to-blue-500 h-1" />
 
         {/* Contact Section */}
-        <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50/50 dark:bg-slate-900/50">
+        <section id="contact" className="py-12 px-4 sm:px-6 lg:px-8 bg-slate-50/50 dark:bg-slate-900/50">
           <div className="max-w-7xl mx-auto">
             <Contact />
           </div>

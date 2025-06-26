@@ -9,7 +9,7 @@ import {
 } from './ui/navigation-menu';
 import { Button } from './ui/button';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
-import { Menu, Moon, Sun, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, Moon, Sun, Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 const Header = () => {
@@ -39,7 +39,7 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { href: 'https://github.com/ghirish-thaenraj', icon: Github, label: 'GitHub' },
+    { href: 'https://github.com/ghirish', icon: Github, label: 'GitHub' },
     { href: 'https://www.linkedin.com/in/ghirish-thaenraj-769b35236/', icon: Linkedin, label: 'LinkedIn' },
     { href: 'mailto:ghirish05@gmail.com', icon: Mail, label: 'Email' },
   ];
@@ -59,8 +59,8 @@ const Header = () => {
     )}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
+          {/* Logo and Status */}
+          <div className="flex items-center space-x-4">
             <a 
               href="#home" 
               onClick={(e) => scrollToSection(e, '#home')}
@@ -68,6 +68,16 @@ const Header = () => {
             >
               GT
             </a>
+            <div className="hidden sm:flex items-center">
+              <div className="flex items-center space-x-2 px-3 py-1 bg-green-100 dark:bg-green-900/20 rounded-full">
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span className="text-sm text-green-800 dark:text-green-400 font-medium">Available for opportunities</span>
+              </div>
+              <div className="ml-3 flex items-center space-x-1 text-sm text-slate-600 dark:text-slate-400">
+                <MapPin className="w-3 h-3" />
+                <span>Providence, RI</span>
+              </div>
+            </div>
           </div>
 
           {/* Desktop Navigation */}

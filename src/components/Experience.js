@@ -104,10 +104,10 @@ const Experience = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-20">
+    <section ref={sectionRef} className="py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className={`text-center mb-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               Experience
@@ -128,12 +128,11 @@ const Experience = () => {
                 <TabsTrigger
                   key={exp.id}
                   value={exp.id}
-                  className="flex items-center space-x-2 px-4 py-3 text-left data-[state=active]:bg-white dark:data-[state=active]:bg-slate-700 data-[state=active]:shadow-sm"
+                  className="flex items-center justify-center px-4 py-3 text-center data-[state=active]:bg-white dark:data-[state=active]:bg-slate-700 data-[state=active]:shadow-sm min-h-[80px]"
                 >
-                  <span className="text-lg">{exp.logo}</span>
-                  <div className="flex flex-col items-start">
-                    <span className="font-medium">{exp.company}</span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400">{exp.role}</span>
+                  <div className="flex flex-col items-center space-y-1 w-full">
+                    <span className="font-medium text-sm leading-tight text-center">{exp.company}</span>
+                    <span className="text-xs text-slate-500 dark:text-slate-400 text-center">{exp.role}</span>
                   </div>
                 </TabsTrigger>
               ))}
@@ -183,7 +182,6 @@ const Experience = () => {
                           </Badge>
                         </div>
                       </div>
-                      <div className="text-4xl">{exp.logo}</div>
                     </div>
                     <CardDescription className="text-base leading-relaxed pt-2">
                       {exp.description}
