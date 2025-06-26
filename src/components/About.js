@@ -36,14 +36,16 @@ const About = () => {
   }, []);
 
   const skills = [
-    { name: 'Python', level: 95, category: 'Programming', icon: Code },
-    { name: 'JavaScript', level: 90, category: 'Programming', icon: Code },
-    { name: 'React', level: 85, category: 'Frontend', icon: Code },
-    { name: 'TensorFlow', level: 88, category: 'AI/ML', icon: Brain },
-    { name: 'PyTorch', level: 82, category: 'AI/ML', icon: Brain },
-    { name: 'PostgreSQL', level: 85, category: 'Database', icon: Database },
-    { name: 'AWS', level: 80, category: 'Cloud', icon: Cloud },
-    { name: 'Docker', level: 85, category: 'DevOps', icon: Cloud },
+    { name: 'Python', level: 95, category: 'Languages', icon: Code },
+    { name: 'Databricks', level: 85, category: 'Cloud', icon: Brain },
+    { name: 'C++', level: 85, category: 'Languages', icon: Code },
+    { name: 'JavaScript', level: 90, category: 'Languages', icon: Code },
+    { name: 'SQL', level: 90, category: 'Languages', icon: Database },
+    { name: 'Flask', level: 85, category: 'Frameworks', icon: Code },
+    { name: 'React.js', level: 85, category: 'Frameworks', icon: Code },
+    { name: 'Pandas', level: 90, category: 'Libraries', icon: Brain },
+    { name: 'PostgreSQL', level: 85, category: 'Databases', icon: Database },
+    { name: 'Git', level: 90, category: 'DevOps', icon: Code },
   ];
 
   const certifications = [
@@ -54,7 +56,19 @@ const About = () => {
       status: 'Active'
     },
     {
+      title: 'Databricks Certified Data Engineer Associate',
+      issuer: 'Databricks',
+      date: 'Dec 2024',
+      status: 'Active'
+    },
+    {
       title: 'Databricks Certified Data Engineer Professional',
+      issuer: 'Databricks',
+      date: 'Dec 2024',
+      status: 'Active'
+    },
+    {
+      title: 'Databricks Certified Machine Learning Associate',
       issuer: 'Databricks',
       date: 'Dec 2024',
       status: 'Active'
@@ -73,14 +87,14 @@ const About = () => {
       specialization: 'Artificial Intelligence Track',
       school: 'Brown University',
       location: 'Providence, RI',
-      period: '2024 - 2026 (Expected)',
+      period: '2025 - 2027 (Expected)',
       status: 'Current'
     },
     {
       degree: 'Bachelor of Science in Computer Science',
       school: 'University of California, Irvine',
       location: 'Irvine, CA',
-      period: '2020 - 2024',
+      period: '2022 - 2025',
       gpa: '3.8/4.0',
       status: 'Completed'
     }
@@ -274,7 +288,7 @@ const About = () => {
                     <div className="text-sm text-slate-600 dark:text-slate-300">Projects Built</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-green-600 dark:text-green-400">3</div>
+                    <div className="text-2xl font-bold text-green-600 dark:text-green-400">5</div>
                     <div className="text-sm text-slate-600 dark:text-slate-300">Certifications</div>
                   </div>
                   <div>

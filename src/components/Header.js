@@ -39,8 +39,8 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { href: 'https://github.com/ghirish-pranav', icon: Github, label: 'GitHub' },
-    { href: 'https://linkedin.com/in/ghirish-pranav', icon: Linkedin, label: 'LinkedIn' },
+    { href: 'https://github.com/ghirish-thaenraj', icon: Github, label: 'GitHub' },
+    { href: 'https://www.linkedin.com/in/ghirish-thaenraj-769b35236/', icon: Linkedin, label: 'LinkedIn' },
     { href: 'mailto:ghirish05@gmail.com', icon: Mail, label: 'Email' },
   ];
 
@@ -66,7 +66,7 @@ const Header = () => {
               onClick={(e) => scrollToSection(e, '#home')}
               className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
             >
-              GP
+              GT
             </a>
           </div>
 

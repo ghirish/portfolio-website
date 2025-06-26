@@ -44,21 +44,18 @@ const Experience = () => {
       location: 'Remote',
       type: 'Full-time',
       status: 'Current',
-      logo: '🚁',
       website: 'https://elytra-robotics.com',
-      description: 'Leading backend development for advanced drone telemetry and health diagnostics systems.',
+      description: 'Leading backend development for drone telemetry ingestion and health diagnostics systems.',
       achievements: [
-        'Architected scalable backend services for real-time drone telemetry processing',
-        'Developed comprehensive health diagnostics algorithms for autonomous drone fleets',
-        'Implemented robust data pipelines handling thousands of telemetry points per second',
-        'Led integration with various sensor systems and IoT devices',
-        'Established monitoring and alerting systems for critical flight operations'
+        'Built and maintained backend services for telemetry ingestion and drone health diagnostics using Python and Flask',
+        'Designed scalable data pipelines to transform raw sensor logs into structured metrics for monitoring and analytics',
+        'Deployed internal APIs and dashboard endpoints to support engineering and operations teams with real-time insights'
       ],
-      technologies: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'AWS', 'WebSockets', 'MQTT'],
+      technologies: ['Python', 'Flask', 'Backend Development', 'Data Pipelines', 'API Design', 'Systems Engineering'],
       highlights: {
-        team: '5+ Engineers',
-        impact: 'Real-time Processing',
-        scale: '1000+ Drones'
+        focus: 'Backend Services',
+        impact: 'Real-time Insights',
+        scale: 'Production Systems'
       }
     },
     {
@@ -67,23 +64,20 @@ const Experience = () => {
       role: 'Software Engineer',
       period: 'Aug 2024 - Mar 2025',
       location: 'Vista, CA',
-      type: 'Part-time',
+      type: 'Full-time',
       status: 'Current',
-      logo: '🧠',
       website: 'https://aibrt.org',
-      description: 'Developing high-performance backend systems for large-scale behavioral data analysis.',
+      description: 'Developing Python and SQL-based backend systems for large-scale behavioral data analysis.',
       achievements: [
-        'Built robust data pipelines processing 90+ million behavioral records',
-        'Optimized database queries reducing processing time by 70%',
-        'Implemented automated data validation and quality assurance systems',
-        'Developed RESTful APIs serving millions of data points to research teams',
-        'Created comprehensive documentation and testing frameworks'
+        'Developed Python and SQL-based backend pipelines to analyze 90M+ behavioral data records',
+        'Created RESTful APIs to serve model predictions for user intent classification and downstream tools',
+        'Automated analytics workflows into reusable modules and dashboards supporting long-term experimentation'
       ],
-      technologies: ['Python', 'Flask', 'PostgreSQL', 'Pandas', 'SQLAlchemy', 'Docker', 'Linux'],
+      technologies: ['Python', 'SQL', 'API Development', 'Scalable Pipelines', 'Behavioral Modeling'],
       highlights: {
         data: '90M+ Records',
-        performance: '70% Faster',
-        uptime: '99.9%'
+        apis: 'RESTful Services',
+        automation: 'Workflow Modules'
       }
     },
     {
@@ -94,21 +88,17 @@ const Experience = () => {
       location: 'Vista, CA',
       type: 'Internship',
       status: 'Completed',
-      logo: '📊',
       website: 'https://aibrt.org',
-      description: 'Analyzed search behavior patterns and developed interactive dashboards for research insights.',
+      description: 'Engineered dashboards and tools to track online search behavior across experimental cohorts.',
       achievements: [
-        'Developed interactive dashboards for search behavior analysis using Python and Streamlit',
-        'Created automated tools for extracting insights from large-scale behavioral datasets',
-        'Implemented statistical models to identify patterns in user search behavior',
-        'Collaborated with research teams to translate data insights into actionable findings',
-        'Presented findings to stakeholders and contributed to academic research publications'
+        'Engineered dashboards and internal tools to track online search behavior across experimental cohorts',
+        'Delivered findings through statistical analysis and collaborated on dashboard deployment with developers'
       ],
-      technologies: ['Python', 'Streamlit', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Jupyter'],
+      technologies: ['SQL', 'Dashboard Engineering', 'A/B Testing', 'Data Analysis', 'Metrics Design'],
       highlights: {
-        dashboards: '5+ Built',
-        insights: 'Key Patterns',
-        research: 'Published'
+        dashboards: 'Multi-Cohort',
+        analysis: 'Statistical',
+        collaboration: 'Cross-team'
       }
     }
   ];

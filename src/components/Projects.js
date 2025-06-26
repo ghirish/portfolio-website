@@ -42,105 +42,80 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'CalMail AI Agent',
+      description: 'An intelligent scheduling assistant that parses emails to detect meeting intent and integrates seamlessly with Gmail and Google Calendar.',
+      longDescription: 'This project implements a Model Context Protocol (MCP)-based architecture to orchestrate structured tools for availability checking, event creation, and automated responses with enhanced security practices.',
+      icon: Brain,
+      image: '/images/calmail-preview.png',
+      technologies: ['JavaScript', 'Node.js', 'React', 'Google Calendar API', 'Gmail API', 'Azure AI (GPT-4)'],
+      category: 'AI/ML',
+      status: 'Completed',
+      featured: true,
+      github: 'https://github.com/ghirish-pranav/calmail-ai-agent',
+      demo: 'https://calmail.ghirish.dev',
+      highlights: [
+        'Model Context Protocol (MCP)-based architecture for tool orchestration',
+        'Real-time notifications and Teams-style interface',
+        'Robust security with OAuth, rate limiting, and data encryption',
+        'Seamless Gmail and Google Calendar integration',
+        'Intelligent meeting intent detection and automated responses'
+      ],
+      stats: {
+        integrations: '2 APIs',
+        security: 'OAuth + Encryption',
+        architecture: 'MCP-based'
+      }
+    },
+    {
+      id: 2,
       title: 'React eCommerce Platform',
-      description: 'A comprehensive full-stack eCommerce solution built with modern web technologies, featuring real-time inventory management, secure payment processing, and intelligent recommendation systems.',
-      longDescription: 'This project demonstrates end-to-end development capabilities, from user interface design to backend API development and database management. The platform includes advanced features like real-time chat support, analytics dashboard, and automated email marketing.',
+      description: 'A responsive full-stack eCommerce solution with shopping cart, product management, and secure checkout functionality.',
+      longDescription: 'This project demonstrates modern React development with state management, API integration, and responsive design principles for a complete eCommerce experience.',
       icon: ShoppingCart,
       image: '/images/ecommerce-preview.png',
-      technologies: ['React', 'Node.js', 'Express', 'Firebase', 'Stripe API', 'Material-UI', 'JWT'],
+      technologies: ['React.js', 'JavaScript', 'HTML/CSS', 'Node.js', 'Firebase'],
       category: 'Full-Stack',
       status: 'Completed',
       featured: true,
       github: 'https://github.com/ghirish-pranav/react-ecommerce',
       demo: 'https://ecommerce-demo.ghirish.dev',
       highlights: [
-        'Real-time inventory management with Firebase',
-        'Secure payment processing with Stripe integration',
-        'Responsive design with Material-UI components',
-        'JWT-based authentication and authorization',
-        'RESTful API design with Express.js'
+        'Responsive front-end design with React components',
+        'State management with React hooks',
+        'Product filtering, search, and sorting functionality',
+        'Integrated checkout with form validation',
+        'RESTful API patterns and mock payment gateway'
       ],
       stats: {
-        stars: 25,
-        commits: 150,
-        contributors: 1
+        components: 'React-based',
+        features: 'Full eCommerce',
+        responsive: 'Mobile-first'
       }
     },
     {
-      id: 2,
-      title: 'Cinescope Movie Web App',
-      description: 'A sophisticated movie discovery platform built with Java Spring Boot and React, featuring advanced search capabilities, user reviews, and personalized recommendations.',
-      longDescription: 'This project showcases enterprise-level architecture with microservices deployment on Kubernetes. It includes features like machine learning-based recommendations, social features, and comprehensive content management.',
+      id: 3,
+      title: 'Cinescope: Full-Stack Movie Web App',
+      description: 'A comprehensive movie browsing platform deployed across a Kubernetes cluster with advanced search and performance optimization.',
+      longDescription: 'This enterprise-level application showcases full-stack development with Java backend, React frontend, and containerized deployment with performance testing and optimization.',
       icon: Film,
       image: '/images/cinescope-preview.png',
-      technologies: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Kubernetes', 'Docker', 'Redis'],
+      technologies: ['Java', 'React', 'MySQL', 'Docker', 'Kubernetes', 'AWS', 'JMeter'],
       category: 'Full-Stack',
       status: 'Completed',
       featured: true,
       github: 'https://github.com/ghirish-pranav/cinescope',
       demo: 'https://cinescope.ghirish.dev',
       highlights: [
-        'Microservices architecture with Spring Boot',
-        'Container orchestration with Kubernetes',
-        'Advanced search with Elasticsearch integration',
-        'Caching layer with Redis for improved performance',
-        'CI/CD pipeline with automated testing'
+        'Servlet logic for advanced search and user authentication',
+        'Movie/star browsing with shopping cart and payment flows',
+        'JDBC implementation with connection pooling',
+        'Performance testing with JMeter optimization',
+        'Kubernetes cluster deployment with Docker containers'
       ],
       stats: {
-        stars: 18,
-        commits: 120,
-        contributors: 2
-      }
-    },
-    {
-      id: 3,
-      title: 'Pneumonia Detection CNN',
-      description: 'An advanced deep learning model for automated pneumonia detection from chest X-ray images, achieving 90% accuracy using convolutional neural networks and computer vision techniques.',
-      longDescription: 'This medical AI project demonstrates expertise in deep learning, computer vision, and healthcare applications. The model was trained on thousands of chest X-ray images and includes data augmentation, transfer learning, and model optimization techniques.',
-      icon: Heart,
-      image: '/images/pneumonia-detection-preview.png',
-      technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'NumPy', 'Matplotlib', 'Jupyter'],
-      category: 'AI/ML',
-      status: 'Completed',
-      featured: true,
-      github: 'https://github.com/ghirish-pranav/pneumonia-detection',
-      demo: 'https://pneumonia-detector.ghirish.dev',
-      highlights: [
-        '90% accuracy on test dataset',
-        'Transfer learning with pre-trained models',
-        'Data augmentation for improved generalization',
-        'Interactive web interface for predictions',
-        'Comprehensive model evaluation and visualization'
-      ],
-      stats: {
-        accuracy: '90%',
-        dataset: '5000+ Images',
-        performance: 'Real-time'
-      }
-    },
-    {
-      id: 4,
-      title: 'AI-Powered Data Analytics Dashboard',
-      description: 'An intelligent analytics platform that processes large datasets and provides automated insights using machine learning algorithms and interactive visualizations.',
-      longDescription: 'This project combines data engineering, machine learning, and frontend development to create a comprehensive analytics solution. It features automated anomaly detection, predictive modeling, and customizable dashboards.',
-      icon: Brain,
-      image: '/images/analytics-dashboard-preview.png',
-      technologies: ['Python', 'Flask', 'React', 'D3.js', 'Pandas', 'Scikit-learn', 'PostgreSQL'],
-      category: 'Data Science',
-      status: 'In Progress',
-      featured: false,
-      github: 'https://github.com/ghirish-pranav/analytics-dashboard',
-      highlights: [
-        'Automated anomaly detection algorithms',
-        'Interactive data visualizations with D3.js',
-        'Real-time data processing capabilities',
-        'Machine learning-based predictions',
-        'Customizable dashboard components'
-      ],
-      stats: {
-        dataPoints: '1M+',
-        models: '5',
-        accuracy: '85%'
+        deployment: 'Kubernetes',
+        optimization: 'JMeter Tested',
+        architecture: 'Full-Stack'
       }
     }
   ];
