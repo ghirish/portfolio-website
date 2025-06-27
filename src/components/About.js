@@ -128,22 +128,15 @@ const About = () => {
               </CardHeader>
               <CardContent className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
                 <p>
-                  My passion for technology began during my undergraduate studies at UC Irvine, where I discovered 
-                  the transformative power of artificial intelligence and machine learning. With a strong foundation 
-                  in computer science and a 3.8 GPA, I've dedicated myself to understanding both the theoretical 
-                  underpinnings and practical applications of cutting-edge technology.
+                My journey in tech began at the University of California, Irvine, where I earned my B.S. in Computer Science. It was there that I first explored the real-world impact of intelligent systems—from AI-powered classification models to full-stack web applications. What started as curiosity quickly evolved into a drive to engineer solutions that solve meaningful problems.
                 </p>
                 <p>
-                  Currently pursuing my Master's degree at Brown University with a focus on AI, I'm diving deep 
-                  into advanced machine learning techniques, neural networks, and their applications in solving 
-                  real-world problems. My academic journey is complemented by hands-on experience in software 
-                  engineering, data analysis, and system design.
+                Now, as an Master’s student in Computer Science at Brown University (AI Track), I’m continuing that journey by deepening my expertise in machine learning, model optimization, and system design. My graduate studies are fueled by hands-on industry experience building backend systems, deploying scalable data pipelines, and leading cross-functional engineering efforts.                </p>
+                <p>
+                I thrive at the intersection of engineering and impact—whether that’s optimizing search and authentication systems in Kubernetes, designing scheduling agents powered by LLMs, or delivering data-driven dashboards that guide behavioral research. I see every project as a chance to blend technical rigor with human-centered thinking.
                 </p>
                 <p>
-                  I believe in the power of technology to improve lives and create positive change. Whether it's 
-                  developing intelligent systems for drone telemetry, building scalable backend services, or 
-                  creating intuitive user interfaces, I approach every project with curiosity, precision, and 
-                  a commitment to excellence.
+I believe great technology should feel intuitive, resilient, and meaningful—and I’m excited to keep building toward that ideal.
                 </p>
               </CardContent>
             </Card>
