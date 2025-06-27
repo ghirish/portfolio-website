@@ -47,12 +47,13 @@ const Projects = () => {
       longDescription: 'This project implements a Model Context Protocol (MCP)-based architecture to orchestrate structured tools for availability checking, event creation, and automated responses with enhanced security practices.',
       icon: Brain,
       image: '/images/calmail-preview.png',
+      preview: 'https://ai-agent-theta-seven.vercel.app/',
       technologies: ['JavaScript', 'Node.js', 'React', 'Google Calendar API', 'Gmail API', 'Azure AI (GPT-4)'],
       category: 'AI/ML',
       status: 'Completed',
       featured: true,
-      github: 'https://github.com/ghirish-pranav/calmail-ai-agent',
-      demo: 'https://calmail.ghirish.dev',
+      github: 'https://github.com/ghirish/aiAgent',
+      demo: 'https://ai-agent-theta-seven.vercel.app/',
       highlights: [
         'Model Context Protocol (MCP)-based architecture for tool orchestration',
         'Real-time notifications and Teams-style interface',
@@ -73,12 +74,13 @@ const Projects = () => {
       longDescription: 'This project demonstrates modern React development with state management, API integration, and responsive design principles for a complete eCommerce experience.',
       icon: ShoppingCart,
       image: '/images/ecommerce-preview.png',
+      preview: 'https://ecommerce-ten-ruby-23.vercel.app/',
       technologies: ['React.js', 'JavaScript', 'HTML/CSS', 'Node.js', 'Firebase'],
       category: 'Full-Stack',
       status: 'Completed',
       featured: true,
-      github: 'https://github.com/ghirish-pranav/react-ecommerce',
-      demo: 'https://ecommerce-demo.ghirish.dev',
+      github: 'https://github.com/ghirish/ecommerce',
+      demo: 'https://ecommerce-ten-ruby-23.vercel.app/',
       highlights: [
         'Responsive front-end design with React components',
         'State management with React hooks',
@@ -103,8 +105,8 @@ const Projects = () => {
       category: 'Full-Stack',
       status: 'Completed',
       featured: true,
-      github: 'https://github.com/ghirish-pranav/cinescope',
-      demo: 'https://cinescope.ghirish.dev',
+      github: 'https://github.com/uci-jherold2-fall24-cs-122b/2024-fall-cs-122b-gboogie',
+      demo: '',
       highlights: [
         'Servlet logic for advanced search and user authentication',
         'Movie/star browsing with shopping cart and payment flows',
@@ -166,9 +168,32 @@ const Projects = () => {
           {featuredProjects.slice(0, 2).map((project, index) => (
             <Card key={project.id} className="group bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border-slate-200/50 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 overflow-hidden">
               <div className="relative overflow-hidden">
-                <div className="aspect-video bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 flex items-center justify-center">
-                  <project.icon className="w-16 h-16 text-blue-600 dark:text-blue-400" />
-                </div>
+                <a 
+                  href={project.demo} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block aspect-video relative group cursor-pointer"
+                >
+                  {project.image ? (
+                    <>
+                      <img 
+                        src={project.image}
+                        alt={`${project.title} preview`}
+                        className="w-full h-full object-cover transform blur-[2px] group-hover:blur-none transition-all duration-500"
+                      />
+                      <div className="absolute inset-0 bg-black/30 transition-all duration-300 flex items-center justify-center">
+                        <div className="text-center">
+                          <ExternalLink className="w-8 h-8 text-white mx-auto" />
+                          <div className="text-white text-sm mt-2 font-medium">View Project</div>
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 flex items-center justify-center">
+                      <project.icon className="w-16 h-16 text-blue-600 dark:text-blue-400" />
+                    </div>
+                  )}
+                </a>
                 <Badge 
                   className="absolute top-4 left-4 bg-white/90 dark:bg-slate-800/90 text-slate-900 dark:text-white"
                 >
@@ -355,7 +380,7 @@ const Projects = () => {
                 </p>
                 <Button size="lg" asChild className="mt-4">
                   <a 
-                    href="https://github.com/ghirish-pranav" 
+                    href="https://github.com/ghirish" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

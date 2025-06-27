@@ -12,11 +12,21 @@ const Hero = () => {
   }, []);
 
   const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const downloadResume = () => {
+    // Create a temporary link to download the resume
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // This should be a file in your public folder
+    link.download = 'Ghirish_Thaenraj_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-white to-purple-50/30 dark:from-slate-900/30 dark:via-slate-800/30 dark:to-purple-900/30"></div>
       
@@ -27,16 +37,14 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-gradient-to-br from-purple-400/10 to-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Content */}
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             {/* Location Badge */}
             <div className="flex items-center space-x-2">
-              <Badge variant="outline" className="flex items-center space-x-1">
-                <MapPin className="w-3 h-3" />
-                <span>Providence, RI</span>
-              </Badge>
+              
+        
             </div>
 
             {/* Main Heading */}
@@ -95,12 +103,10 @@ const Hero = () => {
                 variant="outline" 
                 size="lg" 
                 className="border-2 hover:bg-slate-50 dark:hover:bg-slate-800 font-semibold px-8 py-3 rounded-lg transition-all duration-300"
-                asChild
+                onClick={downloadResume}
               >
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Download className="mr-2 w-4 h-4" />
-                  Download Resume
-                </a>
+                <Download className="mr-2 w-4 h-4" />
+                Download Resume
               </Button>
             </div>
 
