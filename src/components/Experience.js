@@ -39,23 +39,23 @@ const Experience = () => {
     {
       id: 'elytra',
       company: 'Elytra Robotics',
-      role: 'Lead Software Engineer',
+      role: 'Software Engineer',
       period: 'Jan 2025 - Jun 2025',
       location: 'Remote',
       type: 'Full-time',
-      status: 'Current',
+      status: 'Completed',
       website: 'https://elytra-robotics.com',
-      description: 'Leading backend development for drone telemetry ingestion and health diagnostics systems.',
+      description: 'Built and shipped full-stack features for a drone diagnostics dashboard to provide real-time fleet visibility for internal users.',
       achievements: [
-        'Built and maintained backend services for telemetry ingestion and drone health diagnostics using Python and Flask',
-        'Designed scalable data pipelines to transform raw sensor logs into structured metrics for monitoring and analytics',
-        'Deployed internal APIs and dashboard endpoints to support engineering and operations teams with real-time insights'
+        'Built and deployed full-stack web features for the drone diagnostics dashboard using React.js, Node.js, and Express, enabling real-time visibility into fleet performance for internal users',
+        'Designed backend endpoints to process telemetry and sensor data, storing processed outputs in PostgreSQL and visualizing trends such as battery health and flight duration via shadcn/ui',
+        'Implemented user authentication and session management with JWTs, securing internal tools for operations and engineering teams'
       ],
-      technologies: ['Python', 'Flask', 'Backend Development', 'Data Pipelines', 'API Design', 'Systems Engineering'],
+      technologies: ['React.js', 'Node.js', 'Express', 'PostgreSQL', 'shadcn/ui', 'JWT'],
       highlights: {
-        focus: 'Backend Services',
-        impact: 'Real-time Insights',
-        scale: 'Production Systems'
+        focus: 'Full-stack Web',
+        impact: 'Real-time Visibility',
+        security: 'Secure Access'
       }
     },
     {
@@ -65,19 +65,18 @@ const Experience = () => {
       period: 'Aug 2024 - Mar 2025',
       location: 'Vista, CA',
       type: 'Full-time',
-      status: 'Current',
+      status: 'Completed',
       website: 'https://aibrt.org',
       description: 'Developing Python and SQL-based backend systems for large-scale behavioral data analysis.',
       achievements: [
-        'Developed Python and SQL-based backend pipelines to analyze 90M+ behavioral data records',
-        'Created RESTful APIs to serve model predictions for user intent classification and downstream tools',
-        'Automated analytics workflows into reusable modules and dashboards supporting long-term experimentation'
+        'Engineered Python and SQL-based data pipelines to process 90M+ behavioral records, enabling real-time analysis of search engine manipulation effects across large-scale user studies',
+        'Created RESTful APIs using Flask to expose user intent classification model predictions, supporting integration with downstream tooling for bias detection and personalized content delivery'
       ],
       technologies: ['Python', 'SQL', 'API Development', 'Scalable Pipelines', 'Behavioral Modeling'],
       highlights: {
         data: '90M+ Records',
         apis: 'RESTful Services',
-        automation: 'Workflow Modules'
+        impact: 'Real-time Analysis'
       }
     },
     {
@@ -89,15 +88,15 @@ const Experience = () => {
       type: 'Internship',
       status: 'Completed',
       website: 'https://aibrt.org',
-      description: 'Engineered dashboards and tools to track online search behavior across experimental cohorts.',
+      description: 'Automated analytics and maintained dashboards to support experimentation and rigorous statistical analysis.',
       achievements: [
-        'Engineered dashboards and internal tools to track online search behavior across experimental cohorts',
-        'Delivered findings through statistical analysis and collaborated on dashboard deployment with developers'
+        'Automated analytics workflows into modular, reusable Python scripts and dynamic dashboards, streamlining experimentation cycles and reducing hands-on analysis by over 60%',
+        'Maintained and enhanced dashboards by optimizing SQL logic, refining business metric definitions, and implementing statistical analyses including t-tests and chi-squared tests for hypothesis validation'
       ],
-      technologies: ['SQL', 'Dashboard Engineering', 'A/B Testing', 'Data Analysis', 'Metrics Design'],
+      technologies: ['Python', 'SQL', 'Dashboards', 'Data Analysis', 'Statistical Testing'],
       highlights: {
-        dashboards: 'Multi-Cohort',
-        analysis: 'Statistical',
+        efficiency: '60%+ Time Saved',
+        analysis: 't-tests & chi-squared',
         collaboration: 'Cross-team'
       }
     }
